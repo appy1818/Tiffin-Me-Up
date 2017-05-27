@@ -512,31 +512,36 @@
             <div class="eight columns">
 
                <!-- form -->
-               <form action="" method="post" id="contactForm" name="contactForm">
+               <form action="sendEmail.php" method="post" id="contactForm" name="contactForm">
                <fieldset>
 
                   <div>
-                     <label for="contactName">Name <span class="required">*</span></label>
-                     <input type="text" value="" size="35" id="contactName" name="contactName">
+                     <label for="first_name">FirstName<span class="required">*</span></label>
+                     <input type="text" value="" size="35" id="first_name" name="first_name">
                   </div>
 
                   <div>
-                     <label for="contactEmail">Email <span class="required">*</span></label>
-                     <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
+                     <label for="last_name">LastName <span class="required">*</span></label>
+                     <input type="text" value="" size="35" id="last_name" name="last_name">
                   </div>
 
                   <div>
-                     <label for="contactSubject">Subject</label>
-                     <input type="text" value="" size="35" id="contactSubject" name="contactSubject">
+                     <label for="email">Email <span class="required">*</span></label>
+                     <input type="text" value="" size="35" id="email" name="email">
                   </div>
 
                   <div>
-                     <label for="contactMessage">Message <span class="required">*</span></label>
-                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
+                     <label for="telephone">Phone Number</label>
+                     <input type="text" value="" size="35" id="telephone" name="telephone">
                   </div>
 
                   <div>
-                     <button class="submit">Submit</button>
+                     <label for="comments">Message <span class="required">*</span></label>
+                     <textarea cols="50" rows="15" id="comments" name="comments"></textarea>
+                  </div>
+
+                  <div>
+                     <button class="submit" type="submit">Submit</button>
                      <span id="image-loader">
                         <img alt="" src="images/loader.gif">
                      </span>
